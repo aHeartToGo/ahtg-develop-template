@@ -2,11 +2,10 @@ package com.ahtg.template.pojo.result;
 
 import lombok.Data;
 
-/**
- * @author xubod
- */
+import java.io.Serializable;
+
 @Data
-public class RetResult<T> {
+public class RetResult<T> implements Serializable {
 
     private String code;
 
@@ -45,7 +44,7 @@ public class RetResult<T> {
         this.msg = RetCodeEnum.SUCCESS.getMsg();
     }
 
-    private RetResult(T data) {
+    public RetResult(T data) {
         this.code = RetCodeEnum.SUCCESS.getCode();
         this.msg = RetCodeEnum.SUCCESS.getMsg();
         this.data = data;

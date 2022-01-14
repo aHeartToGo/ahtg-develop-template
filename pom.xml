@@ -11,6 +11,8 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <version.spring-boot-starter-web>2.5.3</version.spring-boot-starter-web>
+        <version.lombok>1.18.20</version.lombok>
     </properties>
 
     <parent>
@@ -23,7 +25,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.5.3</version>
+            <version>${version.spring-boot-starter-web}</version>
         </dependency>
 
         <dependency>
