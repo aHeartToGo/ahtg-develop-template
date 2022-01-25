@@ -1,7 +1,6 @@
 package com.ahtg.template.controller;
 
 import com.ahtg.template.pojo.Hello;
-import com.ahtg.template.pojo.result.RetResult;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,17 +13,17 @@ public class HelloController {
     }
 
     @PostMapping("/create")
-    public void createHello(){
+    public void create(){
 
     }
 
-    @PutMapping("/create")
-    public void putHello(){
+    @PutMapping("/modify")
+    public void modify(){
 
     }
 
     @PutMapping("/delete")
-    public void deleteHello(){
+    public void delete(){
 
     }
 }
