@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  tomcat:
+    accept-count: 2000
+    max-http-form-post-size: 10MB
+    threads:
+      max: 2000
+    uri-encoding: UTF-8
+    max-connections: 8192
